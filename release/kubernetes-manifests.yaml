@@ -279,7 +279,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7
+        image: danatrace/currencyservice:node24.22.1
         ports:
         - name: grpc
           containerPort: 7000
@@ -936,7 +936,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/paymentservice:v0.10.7
+        image: danatrace/paymentservice:node24.22.1
         ports:
         - containerPort: 50051
         env:
